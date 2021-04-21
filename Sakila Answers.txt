@@ -47,7 +47,7 @@ Q16:
 A: 
 
 Q17: List all movies featuring a robot.
-A:
+A: SELECT film_id, title FROM film WHERE description LIKE '%robot%';
 
 Q18: How many movies were released in 2010?
 A: SELECT* FROM film WHERE release_year  = "2010";
@@ -59,7 +59,7 @@ Q20: List the full name of the staff member with the ID of 2
 A:
 
 Q21: List all the movies that Fred Costner has appeared in.
-A: 
+A: SELECT* FROM film_list WHERE actors LIKE "%Fred Costner%";
 
 Q22: How many distinct countries are there?
 A: SELECT COUNT(country) FROM country;
